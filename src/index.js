@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-
+import React from "react"
+import ReactDOM from "react-dom"
+import Hello from "./Hello"
 
 const App = () => {
-    return <h2>Hello World</h2>;
+    return <Hello />
 };
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"))
