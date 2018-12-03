@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --mode development --open",
-    "build": "webpack --mode production"
+    "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.js -o src/css/tailwind.css",
+    "start": "npm run tailwind:css && webpack-dev-server --inline --mode development --open",
+    "build": "npm run tailwind:css && webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
     "style-loader": "^0.23.0",
+    "tailwindcss": "^0.7.2",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.8"

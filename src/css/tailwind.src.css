@@ -1,0 +1,12 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+/* $var = red; */
+.header {
+    @apply bg-purple-darker m-6 p-6 rounded shadow-lg;
+}
+
+.container {
+    @apply m-6 p-6;
+    color: red;
+}
