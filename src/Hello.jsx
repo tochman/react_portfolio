@@ -1,12 +1,9 @@
 import React, { Component } from "react"
 
-
-class Hello extends Component {
-    render() {
-        return (
-            <p className="text-grey-dark"> Hello World</p>
-        )
-    }
+const Hello = () => {
+    return (
+        <p className="content-text"> Hello World</p>
+    )
 }
 
 export default Hello

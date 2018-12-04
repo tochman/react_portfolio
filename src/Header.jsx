@@ -1,14 +1,11 @@
-import React, { Component } from "react"
+import React from "react"
 
-class Header extends Component {
-
-    render() {
-        return (
-            <nav className="flex items-center justify-between flex-wrap bg-blue-darkest p-6">
-                <h1 className="text-white text-3xl">My Portfolio</h1>
-            </nav>
-        )
-    }
+const Header = () => {
+    return (
+        <nav className="header">
+            <h1 className="header-title">My Portfolio</h1>
+        </nav>
+    )
 }
 
 export default Header

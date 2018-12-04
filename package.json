@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.js -o src/css/tailwind.css",
-    "start": "npm run tailwind:css && webpack-dev-server --inline --mode development --open",
-    "build": "npm run tailwind:css && webpack --mode production"
+    "build:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css",
+    "watch:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css -w",
+    "start": "npm run watch:css & webpack-dev-server --inline --mode development --open",
+    "build": "npm run build:css && webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +21,10 @@
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.0",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
+    "postcss-cli": "^6.0.1",
     "style-loader": "^0.23.0",
     "tailwindcss": "^0.7.2",
     "webpack": "^4.19.1",

@@ -6118,20 +6118,66 @@ table {
   z-index: auto;
 }
 
-/* $var = red; */
+/** Page **/
 
-.header {
-  background-color: #382b5f;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  border-radius: .25rem;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+.page-wrapper {
+  min-height: 100vh;
 }
 
-.container {
-  margin: 1.5rem;
+.page-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/** Header **/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #12283a;
   padding: 1.5rem;
-  color: red;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 1.875rem;
+}
+
+/** Footer **/
+
+.footer-wrapper {
+  border-top-width: 1px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  color: #b8c2cc;
+}
+
+/** Content section **/
+
+.content-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  flex: 1 1 0%;
+  overflow-y: scroll;
+}
+
+.content-text {
+  color: #8795a1;
 }
 
 @media (min-width: 576px) {
