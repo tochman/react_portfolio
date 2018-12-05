@@ -9,7 +9,7 @@ class Projects extends Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         axios.get('./src/data/projects.json')
             .then(response => {
                 this.setState({
