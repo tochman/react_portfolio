@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import axios from "axios"
+import ProjectCard from "./ProjectCard"
 
 class Projects extends Component {
     constructor() {
@@ -27,32 +28,8 @@ class Projects extends Component {
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
-                    // wrapper
-
-                    <div key={project.id} className="m-2 leading-normal flex">
-                        {/* card content */}
-
-                        <div className="max-w-lg w-full border rounded overflow-hidden m-4 sm:flex">
-                            {/* card image */}
-
-                            <div
-                                className="h-48 sm:h-auto sm:w-48 md:w-64 flex-none bg-cover bg-center text-center overflow-hidden"
-                                style={{ backgroundImage: `url('${project.image}')` }}>
-                            </div>
-                            <div className="px-6 py-4">
-                                <h2 className="mb-2 font-black">{project.name}</h2>
-                                <p className="mb-4 text-grey-dark text-sm">
-                                    {project.description}
-                                </p>
-
-                                {/* button */}
-                                <button className="py-3 px-6 bg-purple hover:bg-purple-light text-white font-bold rounded-full mt-1 mb-2">
-                                    Details
-                                </button>
-
-                            </div>
-
-                        </div>
+                    <div key={project.id} className="min-h-900 my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                        <ProjectCard project={project} />
                     </div>
                 )
             })
@@ -60,10 +37,13 @@ class Projects extends Component {
 
 
         return (
-            <div>
-                <h1 className="content-text">My Projects</h1>
-                {projectsList}
-            </div >
+            <div className="content-wrapper">
+                <h1>My Projects</h1>
+                <p>This is a selection of some of my projects I've been working on.</p>
+                <div className="flex flex-wrap -mx-1 lg:-mx-4">
+                    {projectsList}
+                </div>
+            </div>
         )
     }
 };

@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import _ from 'lodash'
 import { BrowserRouter } from 'react-router-dom'
 import { Switch, Route } from 'react-router-dom'
 
