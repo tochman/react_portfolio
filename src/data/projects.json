@@ -1,11 +1,16 @@
 [
     {
         "id": 1,
-        "name": "My First Website"
+        "name": "My First Website",
+        "image": "http://www.internetlivestats.com/img/twttr.png",
+        "description": "This was my first project"
     },
     {
         "id": 2,
-        "name": "FizzBuzz"
+        "name": "FizzBuzz",
+        "image": "https://allinallnews.com/wp-content/uploads/2015/10/Fizz-Buzz-Test-in-Ruby.jpg",
+        "description": "The dreaded tech interview kata. Not that hard if you take a TDD approach..."
+
     }
 
 ]
