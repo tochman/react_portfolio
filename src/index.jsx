@@ -17,7 +17,7 @@ const App = () => {
         <div className="page-wrapper">
             <div className="page-content">
                 <Header />
-                <div className="content-wrapper">
+                <div className="container content-wrapper md:px-12">
                     <Switch>
                         <Route exact path='/' component={Hello}></Route>
                         <Route exact path='/about' component={About}></Route>

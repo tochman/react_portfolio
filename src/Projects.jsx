@@ -38,7 +38,7 @@ class Projects extends Component {
 
 
         return (
-            <div className="content-wrapper">
+            <div className="container content-wrapper md:px-12">
                 <div className="flex mb-4">
                     <div className="w-1/4">
                         <UndrawDashboard primaryColor='#12283a' height='200px' />

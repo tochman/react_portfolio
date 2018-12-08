@@ -33,7 +33,7 @@
 /** Content section **/
 
 .content-wrapper {
-    @apply container my-12 mx-auto px-4 md:px-12;
+    @apply my-12 mx-auto px-4 ;
 }
 
 body {
