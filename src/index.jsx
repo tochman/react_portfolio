@@ -17,7 +17,7 @@ const App = () => {
         <div className="page-wrapper">
             <div className="page-content">
                 <Header />
-                <div className="container content-wrapper md:px-12">
+                <div className="px-4 pt-4 flex-1 overflow-y-scrol">
                     <Switch>
                         <Route exact path='/' component={Hello}></Route>
                         <Route exact path='/about' component={About}></Route>
