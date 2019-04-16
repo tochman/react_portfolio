@@ -4,11 +4,8 @@ import ProjectCard from "./ProjectCard"
 import { UndrawDashboard } from 'react-undraw-illustrations';
 
 class Projects extends Component {
-    constructor() {
-        super();
-        this.state = {
-            projects: []
-        };
+    state = {
+        projects: []
     }
 
     componentDidMount() {
