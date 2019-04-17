@@ -3,3 +3,5 @@ node_modules/
 .vscode
 dist
 src/css/tailwind.css
+
+.env*
