@@ -9,16 +9,21 @@ class Projects extends Component {
     }
 
     componentDidMount() {
+        this.readProjects()
+    }
+
+    readProjects() {
         axios.get('./src/data/projects.json')
             .then(response => {
                 this.setState({
                     projects: response.data
                 });
             })
-            .catch(function (error) {
+            .catch((error) => {
                 console.log(error);
             });
     }
+
     render() {
         const projects = this.state.projects
         let projectsList

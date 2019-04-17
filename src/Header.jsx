@@ -1,7 +1,10 @@
 import React from "react"
 import { NavLink, Link } from 'react-router-dom';
 
+
+
 const Header = () => {
+    
     return (
         <nav className="header">
             <h1 className="header-title">
