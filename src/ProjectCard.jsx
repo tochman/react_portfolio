@@ -1,7 +1,7 @@
 import React from "react"
 
 const ProjectCard = (props) => {
-    let project = props.project
+    let { project } = props
     return (
 
         <div key={project.id} className="overflow-hidden border">
